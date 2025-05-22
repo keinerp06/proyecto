@@ -1,7 +1,7 @@
 <template>
   <nav>
   
-    <router-link to="/Proyecto">Proyecto</router-link>
+   
   </nav>
   <router-view/>
 </template>

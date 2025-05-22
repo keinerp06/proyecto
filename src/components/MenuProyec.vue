@@ -3,16 +3,16 @@
     <div class="header">
       <div class="logo-header"></div>
       <menu class="menu">
-        <li><a href="/main/Index.html">Inicio</a></li>
+        <li><a href="/">Inicio</a></li>
         <li>
-          <a href="/habitaciones/Habitaciones_general/index.html"
+          <a href="/Habitaciones"
             >Habitaciones</a
           >
         </li>
-        <li><a href="/Restaurante/main.html">Restaurante</a></li>
-        <li><a href="/main/eventos/eventos.html">Eventos</a></li>
+        <li><a href="/Restaurante">Restaurante</a></li>
+        <li><a href="/Evento">Eventos</a></li>
         <li>
-          <a href="/main/contacto/contacto.html" rel="noopener noreferrer"
+          <a href="/Contacto" rel="noopener noreferrer"
             >Contacto</a
           >
         </li>

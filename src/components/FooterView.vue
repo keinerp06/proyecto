@@ -36,6 +36,8 @@ export default {
 <style scoped>
 
 .footer {
+  position: relative;
+  top: 76rem;
     margin-top: 120px;
     display: flex;
     justify-content: space-around;
@@ -107,7 +109,7 @@ ul li {
     position: absolute;
     background-size: cover;
     left: 0;
-    bottom: -655px;
+    bottom: 14rem;
 }
 
 a {

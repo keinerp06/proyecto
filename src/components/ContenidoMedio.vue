@@ -5,9 +5,7 @@
         <div class="textSlider">
           <h2>
             PIDE TU HABITACION
-            <a href="/habitaciones/Habitaciones_general/index.html"
-              ><b>¡AQUI!</b></a
-            >
+            <a href="/Habitaciones"><b>¡AQUI!</b></a>
           </h2>
         </div>
         <ul>
@@ -79,61 +77,10 @@
           </div>
         </div>
       </div>
-      <div class="Todo">
-        <h1 class="parrafo">
+      <h1 class="parrafo">
           Descubre alojamientos en los destinos mas buscados
         </h1>
-        <div class="contenedor">
-          <div class="contenedor-mitad">
-            <div class="contenedor1">
-              <div class="img1"></div>
-              <div class="info">
-                <h2>Santa Marta</h2>
-                <p>Colombia</p>
-              </div>
-            </div>
-
-            <div class="contenedor2">
-              <div class="img2"></div>
-              <div class="info">
-                <h2>San Andres</h2>
-                <p>Colombia</p>
-              </div>
-            </div>
-
-            <div class="contenedor3">
-              <div class="img3"></div>
-              <div class="info">
-                <h2>Medellin</h2>
-                <p>Colombia</p>
-              </div>
-            </div>
-
-            <div class="contenedor4">
-              <div class="img4"></div>
-              <div class="info">
-                <h2>Valledupar</h2>
-                <p>Colombia</p>
-              </div>
-            </div>
-
-            <div class="contenedor5">
-              <div class="img5"></div>
-              <div class="info">
-                <h2>Santa Marta</h2>
-                <p>Colombia</p>
-              </div>
-            </div>
-            <div class="contenedor6">
-              <div class="img6"></div>
-              <div class="info">
-                <h2>Bogota</h2>
-                <p>Colombia</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </template>
@@ -141,6 +88,7 @@
 <script>
 export default {
   name: "ContenidoMedio",
+  
 };
 </script>
 <style scoped>
@@ -239,7 +187,7 @@ b {
   background-color: #83cda2;
   border-radius: 10px;
   padding: 10px;
-  cursor: pointer;
+
 }
 
 /* iconos*/
@@ -425,117 +373,72 @@ b {
 .icono7:hover {
   background: lightskyblue;
 }
-.Todo{
-    padding: 60px;
-}
-.contenedor1 {
-  width: 300px;
-  height: 250px;
-  border-radius: 20px;
-  outline: 1px solid gray;
-}
+.Todo {
+  height: 600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-.img1 {
-  background-image: url(../assets/hoteles/cartagenaa.webp);
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  border-radius: 20px;
-}
+  gap: 1rem;
+  /* border: 2px red solid; */
 
-.contenedor2 {
-  margin-left: 20px;
-  width: 300px;
-  height: 250px;
-  border-radius: 20px;
-  outline: 1px solid gray;
 }
+.paisajes{
+  height: 600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-.img2 {
-  background-image: url(../assets/hoteles/san\ andres.webp);
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  border-radius: 20px;
+  gap: 1rem;
+  /* border: 2px red solid; */
 }
-
-.contenedor3 {
-  margin-left: 20px;
-  width: 300px;
-  height: 250px;
-  border-radius: 20px;
-  outline: 1px solid gray;
-}
-
-.img3 {
-  background-image: url(../assets/hoteles/Medellin.webp);
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  border-radius: 20px;
-}
-
-.contenedor-mitad {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 50px;
-  flex-direction: row;
-}
-
-.info {
-  padding: 0 10px;
-}
-
-.contenedor4 {
-  margin-left: 20px;
-  width: 300px;
-  height: 250px;
-  border-radius: 20px;
-  outline: 1px solid gray;
-}
-
-.img4 {
-  background-image: url(../assets/hoteles/Valledupar.jpg);
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  border-radius: 20px;
-}
-
-.contenedor5 {
-  margin-left: 20px;
-  width: 300px;
-  height: 250px;
-  border-radius: 20px;
-  outline: 1px solid gray;
-}
-
-.img5 {
-  background-image: url(../assets/hoteles/san\ andres.webp);
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  border-radius: 20px;
-}
-
-.contenedor6 {
-  margin-left: 20px;
-  width: 300px;
-  height: 250px;
-  border-radius: 20px;
-  outline: 1px solid gray;
-}
-
-.img6 {
-  background-image: url(../assets/hoteles/Casanare.jpg);
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  border-radius: 20px;
-}
-
 .parrafo {
-  padding: 0 40px;
+  padding: 40px;
   margin: 4px;
+
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 0 10px rgba(216, 219, 0, 0.664);
+  border-radius: 10px;
+}
+
+.component-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  flex-grow: 2;
+
+ 
+}
+
+.component-detail {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.image-card {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.name-card-float {
+  position: absolute;
+  bottom: 5px;
+  left: 1rem;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(208, 254, 6, 0.123);
+  border-radius: 9999px;
 }
 </style>
